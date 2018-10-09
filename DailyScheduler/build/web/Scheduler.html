@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Daily Scheduler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="Stylesheet" href="SchedulerCss.css">
+    </head>
+    <body id="backgrnd">
+        <div id="container">
+            
+             <h1 id="sc">Your Todays Schedule</h1>
+             <div id="control">
+                 
+                     <input type="text" placeholder="schedule...." id="input"/><br><br>
+                     <button id="add" onclick="addItems()"> Add Schedule</button>
+                     <button id="remove" onclick="removeItems()"> Reset All Schedule</button>
+                
+             </div>
+             <ul id="list">
+                 <li id="mycheck">
+                      <input type="checkbox" id="check"/>
+                      <label >Wake up</label>                        
+                 </li>
+             </ul>
+            
+        </div>
+        <script src="SchedulerJS.js"></script>
+    </body>
+</html>

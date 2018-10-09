@@ -1,0 +1,88 @@
+#backgrnd
+{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+#container
+{
+    margin:auto;
+    width: 500px;
+    height: auto;
+    height: 600px;
+    border-color: green;
+    border-style: solid;
+    background-color: window;
+    text-align: center;
+    overflow-y: auto;
+}
+#sc
+{
+    color: crimson;
+    font-size: 36px;
+}
+#input
+{
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+#add
+{
+ width: 200px;  
+ height: 30px; 
+ background-color: lightskyblue;
+}
+#remove
+{
+ width: 200px;  
+ height: 30px; 
+ background-color: red;
+}
+#add:hover
+{
+    background-color:greenyellow;
+}
+#remove:hover
+{
+    background-color:greenyellow;
+}
+#container ul
+{
+    padding-left: 60px;
+    padding-right: 60px;
+     list-style: none; 
+}
+#container ul li
+{
+    border: 2px solid grey;
+    transition:opacity 0.5s ease-in-out;
+    text-align: left;
+    opacity: 0;
+    margin: 0 0 5px 0;
+}
+#container ul li #check
+{
+    width: 20px;
+    height: 20px;
+}
+#container ul li #text
+{
+    font-size: 20px;
+    padding: auto;
+}
+#container ul li input[type="checkbox"]:checked +label
+{
+    text-decoration: line-through;
+    color: grey; 
+}
+#container #mycheck
+{
+ opacity: 1;
+ border-radius: 10px;
+}
+.visual
+{
+    opacity: 1 !important;
+    border-radius: 10px;
+}
