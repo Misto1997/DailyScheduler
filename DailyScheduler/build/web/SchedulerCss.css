@@ -5,6 +5,7 @@
 }
 #container
 {
+    border-radius: 10px;
     margin:auto;
     width: 500px;
     height: auto;
@@ -29,29 +30,34 @@
 }
 #add
 {
+ -webkit-transition-duration: 0.4s;
  width: 200px;  
  height: 30px; 
  background-color: lightskyblue;
 }
 #remove
 {
+ -webkit-transition-duration: 0.4s;
  width: 200px;  
  height: 30px; 
  background-color: red;
 }
+ 
 #add:hover
 {
     background-color:greenyellow;
+    width: 180px;
 }
 #remove:hover
 {
     background-color:greenyellow;
+    width: 180px;
 }
 #container ul
 {
     padding-left: 60px;
     padding-right: 60px;
-     list-style: none; 
+    list-style: none; 
 }
 #container ul li
 {
@@ -59,7 +65,7 @@
     transition:opacity 0.5s ease-in-out;
     text-align: left;
     opacity: 0;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px 0;  
 }
 #container ul li #check
 {
@@ -71,6 +77,10 @@
     font-size: 20px;
     padding: auto;
 }
+#container ul li #txt
+{
+    font-size: 22px;
+}
 #container ul li input[type="checkbox"]:checked +label
 {
     text-decoration: line-through;
@@ -79,10 +89,10 @@
 #container #mycheck
 {
  opacity: 1;
- border-radius: 10px;
+ border-radius: 5px;
 }
 .visual
 {
     opacity: 1 !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }

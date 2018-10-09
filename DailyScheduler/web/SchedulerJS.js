@@ -18,9 +18,11 @@ function addItems()
          var checkbox=document.createElement('input');
          checkbox.type='checkbox';
          checkbox.setAttribute('id','check');
+         checkbox.setAttribute('onclick','func()');
         
          //created label
          var label=document.createElement('label');
+         label.setAttribute('id','txt');
          label.setAttribute('for','item');
         
          // adding these to webpage      
@@ -29,7 +31,7 @@ function addItems()
          li.appendChild(label);
          ul.insertBefore(li,ul.childNodes[0]);
          input.value='';
-         setTimeout(()=>{li.className='visual';},2)
+         setTimeout(()=>{li.className='visual';},100)
         
       }
  }
@@ -39,4 +41,8 @@ function removeItems()
   var ul=list;
   ul.innerHTML='';
 } 
+function func()
+{
+    alert('yay! Job Done..');
+}
 
